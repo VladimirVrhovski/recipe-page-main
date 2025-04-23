@@ -230,27 +230,6 @@ main {
 	font-weight: var(--fw-semibold);
 }
 
-/* Old List */
-
-/* .list li {
-	margin-left: 1.5rem;
-	padding-left: 1rem;
-}
-
-.list li::marker {
-	font-family: "Outfit", sans-serif;
-	font-size: 0.8rem;
-	font-weight: var(--fw-semibold);
-}
-
-.secondary-section > .list li::marker {
-	color: var(--clr-brown-800);
-}
-
-.tertiary-section > .list li::marker {
-	color: var(--clr-rose-800);
-} */
-
 /* Atrribution */
 
 .attribution {
