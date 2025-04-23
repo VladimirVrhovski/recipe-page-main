@@ -1,77 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Recipe page</title>
+		<title>Recipe page</title>
+	</head>
+	<body>
+		<main>
+			<section class="hero">
+				<div class="hero-img-container">
+					<img
+						src="./assets/images/image-omelette.jpeg"
+						alt=""
+						class="hero-img" />
+				</div>
+				<div class="hero-text">
+					<h1 class="primary-heading">Simple Omelette Recipe</h1>
+					<p class="hero-p">
+						An easy and quick dish, perfect for any meal. This classic omelette
+						combines beaten eggs cooked to perfection, optionally filled with
+						your choice of cheese, vegetables, or meats.
+					</p>
+				</div>
+			</section>
+			<section class="tertiary-section">
+				<h3 class="tertiary-heading">Preparation time</h3>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+				<div class="ul-list">
+					<p class="bullet">•</p>
+					<p><span class="bold">Total</span>: Approximately 10 minutes</p>
+					<p class="bullet">•</p>
+					<p><span class="bold">Preparation</span>: 5 minutes</p>
+					<p class="bullet">•</p>
+					<p><span class="bold">Cooking</span>: 5 minutes</p>
+				</div>
+			</section>
+			<section class="secondary-section border-bottom">
+				<h2 class="secondary-heading">Ingredients</h2>
+				<div class="ul-list">
+					<p class="bullet">•</p>
+					<p>2-3 large eggs</p>
+					<p class="bullet">•</p>
+					<p>Salt, to taste</p>
+					<p class="bullet">•</p>
+					<p>Pepper, to taste</p>
+					<p class="bullet">•</p>
+					<p>1 tablespoon of butter or oil</p>
+					<p class="bullet">•</p>
+					<p>
+						Optional fillings: cheese, diced vegetables, cooked meats, herbs
+					</p>
+				</div>
+			</section>
+			<section class="secondary-section border-bottom">
+				<h2 class="secondary-heading">Instructions</h2>
+				<div class="ol-list">
+					<p class="number">1.</p>
+					<p>
+						<span class="bold">Beat the eggs</span>: In a bowl, beat the eggs
+						with a pinch of salt and pepper util they are well mixed. You can
+						add a tablespoon of water or milk for a fluffier texture.
+					</p>
+					<p class="number">2.</p>
+					<p>
+						<span class="bold">Heat the pan</span>: Place a non-stick frying pan
+						over medium heat and add butter or oil.
+					</p>
+					<p class="number">3.</p>
+					<p>
+						<span class="bold">Cook the omelette</span>: Once the butter is
+						melted and bubbling, pour in the eggs. Tilt the pan to ensure the
+						eggs evenly coat the surface.
+					</p>
+					<p class="number">4.</p>
+					<p>
+						<span class="bold">Add fillings (optional)</span>: When the eggs
+						begin to set at the edges but are still slightly runny in the
+						middle, sprinkle your chosen fillings over one half of the omelette.
+					</p>
+					<p class="number">5.</p>
+					<p>
+						<span class="bold">Fold and serve</span>: As the omelette continues
+						to cook, carefully lift one edge and fold it over the fillings. Let
+						it cook for another minute, then slide it onto a plate.
+					</p>
+					<p class="number">6.</p>
+					<p>
+						<span class="bold">Enjoy</span>: Serve hot, with additional salt and
+						pepper if needed.
+					</p>
+				</div>
+			</section>
+			<section class="secondary-section">
+				<h2 class="secondary-heading">Nutrition</h2>
+				<p>
+					The table below shows nutritional values per serving without the
+					additional fillings.
+				</p>
+				<div class="nutrition-table">
+					<div class="left border-bottom">Calories</div>
+					<div class="right border-bottom">277kcal</div>
+					<div class="left border-bottom">Carbs</div>
+					<div class="right border-bottom">0g</div>
+					<div class="left border-bottom">Protein</div>
+					<div class="right border-bottom">20g</div>
+					<div class="left">Fat</div>
+					<div class="right">22g</div>
+				</div>
+			</section>
+		</main>
 
-  Simple Omelette Recipe
+		<div class="visualy-hidden">
+			Calories 277kcal Carbs 0g Protein 20g Fat 22g
+		</div>
 
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-
-  Preparation time
-
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
-
-  Ingredients
-
-  2-3 large eggs
-  Salt, to taste
-  Pepper, to taste
-  1 tablespoon of butter or oil
-  Optional fillings: cheese, diced vegetables, cooked meats, herbs
-
-  Instructions
-
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.
-
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
-
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.
-
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.
-
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.
-
-  Enjoy: Serve hot, with additional salt and pepper if needed.
-
-  Nutrition
-
-  The table below shows nutritional values per serving without the additional fillings.
-
-  Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by
+			<a
+				href="https://www.upwork.com/freelancers/~012c647015861fb26b?mp_source=share"
+				target="_blank"
+				>Vladimir Vrhovski</a
+			>.
+		</div>
+	</body>
 </html>

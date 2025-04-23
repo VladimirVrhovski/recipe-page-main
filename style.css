@@ -1,6 +1,7 @@
 @font-face {
 	font-family: "Outfit";
-	src: url("./assets/fonts/Outfit-VariableFont_wght.ttf") format("truetype"),
+	src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+			format("truetype"),
 		url("./assets/fonts/outfit/static/Outfit-Black.ttf") format("truetype"),
 		url("./assets/fonts/outfit/static/Outfit-Bold.ttf") format("truetype"),
 		url("./assets/fonts/outfit/static/Outfit-ExtraBold.ttf") format("truetype"),
@@ -16,8 +17,6 @@
 	font-family: "Young Serif";
 	src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
 		format("truetype");
-	font-weight: normal;
-	font-style: normal;
 }
 
 :root {
@@ -31,6 +30,9 @@
 	--clr-rose-50: hsl(330, 100%, 98%);
 
 	--fs-regular: 1rem;
+	--fs-primary-heading: 2.3rem;
+	--fs-secondary-heading: 2rem;
+	--fs-tertiary-heading: 1.5rem;
 
 	--fw-regular: 400;
 	--fw-semibold: 600;
@@ -56,12 +58,206 @@ body {
 	width: 100%;
 }
 
-body {
-	line-height: 1.5;
-	font-family: sans-serif;
-}
-
 img {
 	display: block;
 	max-width: 100%;
+}
+
+/* General style */
+
+body {
+	line-height: 1.5;
+	font-family: "Outfit", sans-serif;
+	font-size: var(--fs-regular);
+	font-weight: var(--fw-regular);
+	color: var(--clr-stone-600);
+	background-color: var(--clr-stone-100);
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.hero-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.hero-img-container {
+	margin-inline: -2rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 0 2rem 2rem;
+	background-color: var(--clr-white);
+}
+
+@media (min-width: 770px) {
+	main {
+		max-width: 720px;
+		padding: 2.5rem;
+		border-radius: 2rem;
+		margin: 10rem auto;
+	}
+	.hero-img-container {
+		margin-inline: 0;
+	}
+}
+
+.secondary-section {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.tertiary-section {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	padding: 1.5rem;
+	border-radius: 1rem;
+	background-color: var(--clr-rose-50);
+}
+
+.primary-heading {
+	font-family: "Young Serif", serif;
+	font-size: var(--fs-primary-heading);
+	font-weight: var(--fw-regular);
+	color: var(--clr-stone-900);
+	line-height: 1;
+}
+
+.secondary-heading {
+	font-family: "Young Serif", serif;
+	font-size: var(--fs-secondary-heading);
+	font-weight: var(--fw-regular);
+	color: var(--clr-brown-800);
+	line-height: 1;
+}
+
+.tertiary-heading {
+	font-family: "Outfit", sans-serif;
+	font-size: var(--fs-tertiary-heading);
+	font-weight: var(--fw-semibold);
+	color: var(--clr-rose-800);
+	line-height: 1;
+}
+
+.bold {
+	font-weight: var(--fw-bold);
+}
+
+.border-bottom {
+	padding-bottom: 2rem;
+	border-bottom: 1px solid var(--clr-stone-150);
+}
+
+.visualy-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+/* List */
+
+.ul-list,
+.ol-list {
+	display: grid;
+	grid-template-columns: 2rem 1fr;
+	row-height: min-content;
+	column-gap: 1rem;
+	row-gap: 0.5rem;
+}
+
+.ul-list {
+	align-items: center;
+}
+.ol-list {
+	align-items: start;
+}
+
+.bullet,
+.number {
+	text-align: center;
+	font-weight: var(--fw-bold);
+	font-size: 1rem;
+}
+
+.secondary-section .bullet,
+.secondary-section .number {
+	color: var(--clr-brown-800);
+}
+
+.tertiary-section .bullet,
+.tertiary-section .number {
+	color: var(--clr-rose-800);
+}
+
+/* Nutrition table */
+
+.nutrition-table {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.left,
+.right {
+	padding-block: 0.5rem;
+}
+
+.left {
+	padding-inline: 1.5rem 0.5rem;
+}
+
+.right {
+	padding-inline: 0.5rem 1.5rem;
+	color: var(--clr-brown-800);
+	font-weight: var(--fw-semibold);
+}
+
+/* Old List */
+
+/* .list li {
+	margin-left: 1.5rem;
+	padding-left: 1rem;
+}
+
+.list li::marker {
+	font-family: "Outfit", sans-serif;
+	font-size: 0.8rem;
+	font-weight: var(--fw-semibold);
+}
+
+.secondary-section > .list li::marker {
+	color: var(--clr-brown-800);
+}
+
+.tertiary-section > .list li::marker {
+	color: var(--clr-rose-800);
+} */
+
+/* Atrribution */
+
+.attribution {
+	margin-inline: auto;
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
 }
